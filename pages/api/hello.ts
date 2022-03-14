@@ -4,17 +4,18 @@ import getConfig from 'next/config'
 
 const { serverRuntimeConfig } = getConfig();
 
-// export const SELF_URL =
-//   process.env.SELF_URL ||
-//   (process.env.CONTEXT === "production"
-//     ? process.env.URL
-//     : process.env.DEPLOY_PRIME_URL);
+export const SELF_URL =
+  process.env.SELF_URL ||
+  (process.env.CONTEXT === "production"
+    ? process.env.URL
+    : process.env.DEPLOY_PRIME_URL);
 
 
 type Data = {
   name: string;
   key?: string;
   context: string;
+  selfUrl?: string;
 };
 
 export default function handler(
@@ -25,5 +26,6 @@ export default function handler(
     name: "John Doe",
     key: serverRuntimeConfig.API_KEY || "NOT_FOUND",
     context: serverRuntimeConfig.CONTEXT || "NOT_FOUND",
+    selfUrl: SELF_URL,
   });
 }
