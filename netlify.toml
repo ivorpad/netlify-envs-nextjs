@@ -12,4 +12,4 @@ API_KEY = "12345"
 # API_KEY = "12345_prod"
 
 [context.deploy-preview.environment]
-# API_KEY = "12345_preview"
+API_KEY = "12345_preview"
