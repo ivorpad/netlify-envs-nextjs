@@ -9,7 +9,7 @@ package = "@netlify/plugin-nextjs"
 API_KEY = "12345"
 
 [context.production.environment]
-# API_KEY = "12345_prod"
+API_KEY = "12345_prod"
 
 [context.deploy-preview.environment]
 API_KEY = "12345_preview"
