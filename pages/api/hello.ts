@@ -1,15 +1,9 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import getConfig from 'next/config'
+import { SELF_URL } from '../../constants';
 
 const { serverRuntimeConfig } = getConfig();
-
-export const SELF_URL =
-  process.env.SELF_URL ||
-  (process.env.CONTEXT === "production"
-    ? process.env.URL
-    : process.env.DEPLOY_PRIME_URL);
-
 
 type Data = {
   name: string;
