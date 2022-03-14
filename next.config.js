@@ -3,9 +3,6 @@ const nextConfig = {
   reactStrictMode: true,
   env: {
     API_KEY: process.env.API_KEY,
-  },
-  serverRuntimeConfig: {
-    API_KEY: process.env.API_KEY,
   }
 };
 
