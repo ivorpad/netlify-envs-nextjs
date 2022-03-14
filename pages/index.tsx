@@ -9,6 +9,7 @@ const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
+      <h1>Some changes</h1>
       <pre>
         {process.env.API_KEY}
       </pre>
