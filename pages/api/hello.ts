@@ -10,6 +10,7 @@ type Data = {
   key?: string;
   context: string;
   selfUrl?: string;
+  ivor?: string
 };
 
 export default function handler(
@@ -21,5 +22,6 @@ export default function handler(
     key: serverRuntimeConfig.API_KEY || "NOT_FOUND",
     context: serverRuntimeConfig.CONTEXT || "NOT_FOUND",
     selfUrl: SELF_URL,
+    ivor: 'ivor'
   });
 }
