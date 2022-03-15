@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <h1>Some changes {SELF_URL}</h1>
       <pre>
-        {process.env.NEXT_PUBLIC_API_KEY}
+        {process.env.API_KEY}
       </pre>
     </div>
   )

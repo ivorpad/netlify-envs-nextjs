@@ -5,23 +5,16 @@ import { SELF_URL } from '../../constants';
 
 const { serverRuntimeConfig } = getConfig();
 
-type Data = {
-  name: string;
-  key?: string;
-  context: string;
-  selfUrl?: string;
-  ivor?: string
-};
-
 export default function handler(
   req: NextApiRequest,
-  res: NextApiResponse<Data>
+  res: NextApiResponse<any>
 ) {
   res.status(200).json({
     name: "John Doe",
     key: serverRuntimeConfig.API_KEY || "NOT_FOUND",
     context: serverRuntimeConfig.CONTEXT || "NOT_FOUND",
     selfUrl: SELF_URL,
-    ivor: 'ivor'
+    apiUi: process.env.API_KEY || "NOT_FOUND",
+    apiServerConfig: serverRuntimeConfig.API_KEY || "NOT_FOUND",
   });
 }
