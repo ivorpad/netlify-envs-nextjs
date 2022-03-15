@@ -14,6 +14,7 @@ const Home: NextPage = () => {
       <pre>
         {process.env.API_KEY}
       </pre>
+      <h3>{process.env.CONTEXT}</h3>
     </div>
   )
 }

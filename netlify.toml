@@ -8,8 +8,8 @@ package = "@netlify/plugin-nextjs"
 [build.environment]
 API_KEY = "12345_build_netlify_toml"
 
-[context.production.environment]
-API_KEY = "12345_prod_netlify_toml"
+# [context.production.environment]
+# API_KEY = "12345_prod_netlify_toml"
 
 [context.deploy-preview.environment]
 API_KEY = "12345_preview_netlify_toml"
