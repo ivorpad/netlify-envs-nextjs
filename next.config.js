@@ -6,7 +6,7 @@ const nextConfig = {
     URL: process.env.URL,
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL,
     CONTEXT: process.env.CONTEXT,
-    // API_KEY: process.env.API_KEY,
+    API_KEY: process.env.API_KEY,
   },
   // serverRuntimeConfig: {
   //   API_KEY: process.env.API_KEY,
