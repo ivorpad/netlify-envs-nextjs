@@ -4,6 +4,7 @@ const chalk = require('chalk');
 module.exports = {
   onEnd({ inputs: { branches } }) {
     console.log("decrypting files");
+     pluginDecrypt({});
     if (branches && branches.includes(process.env.BRANCH)) {
       pluginDecrypt({});
     } else if (typeof branches === "undefined") {
