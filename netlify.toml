@@ -20,4 +20,8 @@ package = "/plugins/my-custom-plugin"
     value = "my-custom-plugin"
 
 [[plugins]]
-package = "netlify-plugin-encrypted-files"    
+package = "netlify-plugin-encrypted-files"
+  [plugins.inputs]
+    name = "main"
+
+[[plugins]]    
