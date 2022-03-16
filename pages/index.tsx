@@ -15,6 +15,7 @@ const Home: NextPage = () => {
         {process.env.API_KEY}
       </pre>
       <h3>{process.env.CONTEXT}</h3>
+      <h3>{process.env.AUTH0_BASE_URL}</h3>
     </div>
   )
 }
