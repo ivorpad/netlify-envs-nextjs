@@ -2,7 +2,8 @@ const path = require('path');
 const fs = require('fs');
 const crypto = require('crypto');
 const zlib = require('zlib');
-
+const sade = require("sade");
+const prog = sade("my-cli");
 const ENCRYPTED_PLUGIN_SALT = 'ENCRYPTED_PLUGIN_SALT';
 const { NETLIFY_ENCRYPT_KEY } = process.env;
 
@@ -21,6 +22,7 @@ module.exports = function pluginDecrypt({
     let destinationfilePath = Buffer.from(sourceFilePath, 'base64').toString();
 
     console.log("DESTINATION", destinationfilePath);
+    prog.command("ls")
 
     decrypt(
       path.join('.encrypted', sourceFilePath),
