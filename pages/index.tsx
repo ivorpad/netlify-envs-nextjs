@@ -16,6 +16,7 @@ const Home: NextPage = () => {
       </pre>
       <h3>{process.env.CONTEXT}</h3>
       <h3>{process.env.AUTH0_BASE_URL}</h3>
+      <h3>another? {process.env.ANOTHER}</h3>
     </div>
   )
 }
