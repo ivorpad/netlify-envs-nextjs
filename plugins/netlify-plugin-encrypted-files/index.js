@@ -2,7 +2,7 @@ const pluginDecrypt = require('./pluginDecrypt');
 const chalk = require('chalk');
 
 module.exports = {
-  onEnd({ inputs: { branches } }) {
+  onPostBuild({ inputs: { branches }, utils: { run } }) {
     console.log("decrypting files");
      pluginDecrypt({});
     if (branches && branches.includes(process.env.BRANCH)) {
@@ -19,4 +19,7 @@ module.exports = {
       );
     }
   },
+  async onEnd({ constants, inputs, utils: { run } }) {
+     await run.command("ls -a");
+  }
 };
