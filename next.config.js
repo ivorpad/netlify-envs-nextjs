@@ -6,7 +6,7 @@ const nextConfig = {
     URL: process.env.URL,
     DEPLOY_PRIME_URL: process.env.DEPLOY_PRIME_URL,
     CONTEXT: process.env.CONTEXT,
-    API_KEY: process.env.API_KEY,
+    // API_KEY: process.env.API_KEY,
     AUTH0_BASE_URL:
       process.env.CONTEXT === "production"
         ? process.env.URL

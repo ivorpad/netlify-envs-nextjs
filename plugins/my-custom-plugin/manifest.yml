@@ -1,0 +1,5 @@
+name: my-custom-plugin
+inputs:
+  - name: value
+    description: The value of the input
+  

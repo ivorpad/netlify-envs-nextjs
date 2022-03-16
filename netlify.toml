@@ -2,8 +2,8 @@
 command = "npm run build"
 publish = ".next"
 
-[[plugins]]
-package = "@netlify/plugin-nextjs"
+# [[plugins]]
+# package = "@netlify/plugin-nextjs"
 
 [build.environment]
 API_KEY = "12345_build_netlify_toml"
@@ -13,3 +13,8 @@ API_KEY = "12345_build_netlify_toml"
 
 [context.deploy-preview.environment]
 API_KEY = "12345_preview_netlify_toml"
+
+[[plugins]]
+package = "/plugins/my-custom-plugin"
+  [plugins.inputs]
+    value = "my-custom-plugin"
