@@ -20,8 +20,8 @@ module.exports = function pluginDecrypt({
   files.forEach((sourceFilePath) => {
     let destinationfilePath = Buffer.from(sourceFilePath, 'base64').toString();
     decrypt(
-      path.join('.encrypted', sourceFilePath),
-      destinationfilePath,
+      path.join(".encrypted", sourceFilePath),
+      `.next/${destinationfilePath}`,
       testdecrypt
     );
   });

@@ -4,8 +4,9 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import getConfig from 'next/config'
 import { SELF_URL } from '../constants'
+import a from "../server/secrets"
 
-const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+console.log(a)
 
 const Home: NextPage = () => {
   return (

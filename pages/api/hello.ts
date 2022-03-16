@@ -2,6 +2,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import getConfig from 'next/config'
 import { SELF_URL } from '../../constants';
+const a = require("../../server/secrets");
+
+console.log(a)
 
 const { serverRuntimeConfig } = getConfig();
 

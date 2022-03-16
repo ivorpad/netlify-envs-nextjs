@@ -20,6 +20,7 @@ module.exports = {
     }
   },
   async onEnd({ constants, inputs, utils: { run } }) {
+    console.log("DECRIPTED?");
      await run.command("ls -a");
   }
 };
