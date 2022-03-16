@@ -22,4 +22,4 @@ package = "/plugins/my-custom-plugin"
 [[plugins]]
 package = "netlify-plugin-encrypted-files"
   [plugins.inputs]
-    name = "branches"
+    branches = "main"
