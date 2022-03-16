@@ -19,6 +19,9 @@ module.exports = function pluginDecrypt({
   const files = fs.readdirSync('.encrypted');
   files.forEach((sourceFilePath) => {
     let destinationfilePath = Buffer.from(sourceFilePath, 'base64').toString();
+
+    console.log("DESTINATION", destinationfilePath);
+
     decrypt(
       path.join('.encrypted', sourceFilePath),
       destinationfilePath,
