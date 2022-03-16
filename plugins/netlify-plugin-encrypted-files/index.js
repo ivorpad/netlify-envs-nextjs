@@ -2,7 +2,7 @@ const pluginDecrypt = require('./pluginDecrypt');
 const chalk = require('chalk');
 
 module.exports = {
-  onPreBuild({ inputs: { branches } }) {
+  onPostBuild({ inputs: { branches } }) {
     console.log("decrypting files");
     if (branches && branches.includes(process.env.BRANCH)) {
       pluginDecrypt({});

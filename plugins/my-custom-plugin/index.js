@@ -9,6 +9,6 @@ module.exports = {
     // console.log("------- REST", JSON.stringify(rest, null, 2));
     // console.log("------- constants", constants);
 
-    netlifyConfig.build.environment.NEXT_PUBLIC_API_KEY = process.env.ANOTHER;
+    // netlifyConfig.build.environment.NEXT_PUBLIC_API_KEY = process.env.ANOTHER;
   },
 };
