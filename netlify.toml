@@ -18,8 +18,3 @@ API_KEY = "12345_preview_netlify_toml"
 package = "/plugins/my-custom-plugin"
   [plugins.inputs]
     value = "my-custom-plugin"
-
-[[plugins]]
-package = "/plugins/netlify-plugin-encrypted-files"
-  [plugins.inputs]
-    branches = ["main"] 
