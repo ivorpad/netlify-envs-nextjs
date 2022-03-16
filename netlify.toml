@@ -23,5 +23,3 @@ package = "/plugins/my-custom-plugin"
 package = "netlify-plugin-encrypted-files"
   [plugins.inputs]
     name = "main"
-
-[[plugins]]    
