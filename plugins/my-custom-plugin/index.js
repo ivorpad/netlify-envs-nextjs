@@ -7,6 +7,7 @@ module.exports = {
   },
   onPostBuild: async ({ constants, inputs, netlifyConfig, utils: { run } }) => {
     console.log('POST BUILD');
-    await run.command("ls -a");
+    await run.command("cd .next");
+    await run.command("mkdir hello");
   },
 };
